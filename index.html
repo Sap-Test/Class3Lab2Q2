@@ -3,11 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Pizza Split calculator</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="PizzaCostCalc.js"></script>
 </head>
 <body>
 
-    <button onclick="pizzaPrice()"> Calculate Split Price</button>
+<!-- input text areas -->
+<label for="numPizza">Number of Pizza</label>
+<input id="numPizza" type="number" min="1">
+
+<br>
+
+<label for="numToppings">Number Of Toppings</label>
+<input id="numToppings" type="number" min="0">
+
+<br>
+
+<label for="numCoworker">Number Of Coworker</label>
+<input id="numCoworker" type="number" min="1">
+
+<br><br>
+<!-- button -->
+<button>Calculate Split Price</button>
+
+<!-- two output paragraphs -->
+<p id="totalPizzaCost"></p>
+<p id="splitPrice"></p>
 
 </body>
 </html>
